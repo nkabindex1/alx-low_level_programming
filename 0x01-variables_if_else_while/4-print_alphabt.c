@@ -15,8 +15,11 @@ int main(void)
 	for (i = 0; i < length - 1; i++)
 	{
 		char lowerCh = tolower(alphabets[i]);
-		if(lowerCh != 'q' || lowerCh != 'e')
-			putchar(lowerCh);
+
+		if (lowerCh != 'q' || lowerCh != 'e')
+			continue;
+
+		putchar(lowerCh);
 	}
 
 	putchar('\n');
