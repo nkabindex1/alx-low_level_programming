@@ -14,7 +14,7 @@ int main(void)
 
 	for (i = 0; i < length; i++)
 	{
-		char lowerCh = tolower(alphabet[i]);
+		char lowerCh = tolower(alphabets[i]);
 
 		putchar(lowerCh);
 	}
