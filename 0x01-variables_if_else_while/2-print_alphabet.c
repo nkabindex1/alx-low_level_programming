@@ -8,9 +8,18 @@
  */
 int main(void)
 {
-	char ch = 'X';
+	char alphabets[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int length = sizeof(alphabets) / sizeof(alphabets[0]);
+	int i;
 
-	putchar(tolower(ch));
-	putchar('\n');
+	for (i = 0; i < length; i++)
+	{
+		char lowerCh = tolower(alphabet[i]);
+
+		putchar(lowerCh);
+	}
+
+	putchar('\n')
+
 	return (0);
 }
