@@ -16,10 +16,8 @@ int main(void)
 	{
 		char lowerCh = tolower(alphabets[i]);
 
-		if (lowerCh != 'q' || lowerCh != 'e')
-			continue;
-
-		putchar(lowerCh);
+		if (lowerCh != 'q' && lowerCh != 'e')
+			putchar(lowerCh);
 	}
 
 	putchar('\n');
