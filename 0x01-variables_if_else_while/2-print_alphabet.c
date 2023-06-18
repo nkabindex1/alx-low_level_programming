@@ -12,7 +12,7 @@ int main(void)
 	int length = sizeof(alphabets) / sizeof(alphabets[0]);
 	int i;
 
-	for (i = 0; i < length; i++)
+	for (i = 0; i < length - 1; i++)
 	{
 		char lowerCh = tolower(alphabets[i]);
 
