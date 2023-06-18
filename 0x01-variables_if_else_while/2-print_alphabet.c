@@ -19,7 +19,7 @@ int main(void)
 		putchar(lowerCh);
 	}
 
-	putchar('\n')
+	putchar('\n');
 
 	return (0);
 }
