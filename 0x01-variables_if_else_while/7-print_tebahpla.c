@@ -10,9 +10,9 @@ int main(void)
 {
 	char alphabets[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int length = sizeof(alphabets) / sizeof(alphabets[0]);
-	int i = length - 1;
+	int i = length - 2;
 
-	for (; i > 0; i--)
+	for (; i >= 0; i--)
 	{
 		char lowerCh = tolower(alphabets[i]);
 
