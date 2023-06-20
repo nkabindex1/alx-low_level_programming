@@ -13,13 +13,11 @@ void jack_bauer(void)
 
 		for (m = 0; m <= 59; m++)
 		{
-			if (h <= 9)
-				_putchar(48);
-			_putchar(48 + h);
+			_putchar(h / 10 + '0');
+			_putchar(h % 10 + '0');
 			_putchar(':');
-			if (m <= 9)
-				_putchar(48);
-			_putchar(48 + m);
+			_putchar(m / 10 + '0');
+			_putchar(m % 10 + '0');
 
 		}
 	}
