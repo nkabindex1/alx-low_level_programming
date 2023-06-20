@@ -15,6 +15,8 @@ void print_to_98(int n)
 		int tmp;
 		int d;
 
+		_putchar(48 + n);
+
 		if (number < 0)
 		{
 			number = -number;
