@@ -15,7 +15,13 @@ void times_table(void)
 		{
 			int tmp = i * j;
 
-			_putchar(tmp + 48);
+			if (tmp <= 9)
+				_putchar(tmp + 48);
+			else
+			{
+				_putchar(tmp / 10 + 48);
+				_putchar(tmp % 10 + 48);
+			}
 			_putchar(',');
 			if (j < 9)
 				_putchar(' ');
