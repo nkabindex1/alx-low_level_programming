@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * print_alphabet - entry point
- * Return: 0 (Success)
+ * print_alphabet - print all alphabets is lower
  */
-int print_alphabet(void)
+void print_alphabet(void)
 {
 	int i;
 
