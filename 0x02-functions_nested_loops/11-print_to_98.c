@@ -11,7 +11,6 @@ void print_to_98(int n)
 	for (i = n; i < 98; i++)
 	{
 		int number = i;
-		int divisor = 10;
 		int digits = 1;
 
 		if (number < 0)
@@ -34,7 +33,10 @@ void print_to_98(int n)
 			int pow = 1;
 
 			while (pow > 0)
+			{
 				pow *= 10;
+				p--;
+			}
 			_putchar(number / pow + 48);
 		}
 		_putchar(',');
