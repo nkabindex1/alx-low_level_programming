@@ -12,21 +12,21 @@ void print_to_98(int n)
 	{
 		int number = i;
 		int digits = 1;
+		int tmp;
+		int d;
 
 		if (number < 0)
 		{
 			number = -number;
 			_putchar(45);
 		}
-		int tmp = number;
+		tmp = number;
 
 		while (tmp > 9)
 		{
 			tmp /= 10;
 			digits++;
 		}
-
-		int d;
 
 		for (d = digits; d > 0; d--)
 		{	int p = d - 1;
