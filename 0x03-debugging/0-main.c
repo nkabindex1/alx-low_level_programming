@@ -5,6 +5,10 @@
  */
 int main(void)
 {
-	positive_or_negative(0);
+	int n;
+
+	n = 0;
+	positive_or_negative(n);
+	putchar('\n');
 	return (0);
 }
