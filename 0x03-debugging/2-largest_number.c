@@ -10,9 +10,12 @@
 int largest_number(int a, int b, int c)
 {
 	int largest = a;
-	int num[3] = {a, b, c};
+	int num[3];
 	int i;
 
+	num[0] = a;
+	num[1] = b;
+	num[2] = c;
 	for (i = 1; i < 3; i++)
 	{
 		if (largest < num[i])
