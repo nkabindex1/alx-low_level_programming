@@ -6,5 +6,5 @@
 int main(void)
 {
 	positive_or_negetive(0);
-	Return(0);
+	return (0);
 }
