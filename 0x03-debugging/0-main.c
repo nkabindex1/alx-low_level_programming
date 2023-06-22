@@ -9,6 +9,5 @@ int main(void)
 
 	n = 0;
 	positive_or_negative(n);
-	putchar('\n');
 	return (0);
 }
