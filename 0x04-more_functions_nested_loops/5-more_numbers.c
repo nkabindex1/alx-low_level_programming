@@ -12,7 +12,15 @@ void more_numbers(void)
 		int j;
 
 		for (j = 0; j <= 14; j++)
-			_putchar(i);
+		{
+			if (j == 0 && j <= 0)
+			{
+				_putchar(48 + j);
+				continue;
+			}
+			_putchar('1');
+			_putchar((j % 10) + 48);
+		}
 		_putchar('\n');
 	}
 }
