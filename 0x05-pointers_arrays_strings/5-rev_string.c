@@ -17,7 +17,7 @@ void rev_string(char *s);
 	}
 	s--;
 	
-	for (int i = 0; i < counter; i++)
+	for (i = 0; i < counter; i++)
 	{
 		tmp[i] = *s;
 		s--;
