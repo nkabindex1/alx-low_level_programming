@@ -3,7 +3,7 @@
  * rev_string - prints string in reverse
  * @s: string to be printed
  */
-void rev_string(char *s);
+void rev_string(char *s)
 {
 	int counter;
 	char tmp[counter];
@@ -17,7 +17,7 @@ void rev_string(char *s);
 	}
 	s--;
 	
-	for (i = 0; i < counter; i++)
+	for (i = 0; i <= counter; i++)
 	{
 		tmp[i] = *s;
 		s--;
