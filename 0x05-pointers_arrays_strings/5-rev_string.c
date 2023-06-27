@@ -6,7 +6,7 @@
 void rev_string(char *s)
 {
 	int counter;
-	char *tmp;
+	char tmp;
 	int i;
 
 	counter = 0;
@@ -19,7 +19,7 @@ void rev_string(char *s)
 
 	while (counter--)
 	{
-		*tmp = *s;
+		tmp = *s;
 		tmp++;
 		s--;
 	}
