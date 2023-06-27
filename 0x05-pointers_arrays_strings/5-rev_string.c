@@ -7,6 +7,7 @@ void rev_string(char *s)
 {
 	int counter;
 	char tmp;
+	int i;
 
 	counter = 0;
 	while (*s != '\0')
@@ -15,15 +16,14 @@ void rev_string(char *s)
 		counter++;
 	}
 	s--;
-
+	i = 0;
 	while (counter--)
 	{
-		tmp = *s;
+		tmp = *s + i;
 		_putchar(tmp);
-		tmp++;
+		i++;
 		s--;
 	}
-	tmp++;
-	tmp = '\n';
+	tmp = '\n' + i;
 	*s = tmp;
 }
