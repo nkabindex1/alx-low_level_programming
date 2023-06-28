@@ -14,5 +14,5 @@ char *_strcat(char *dest, char *src)
 		counter++;
 	}
 	dest[counter] = *src;
-	return *dest[0];
+	return dest;
 }
