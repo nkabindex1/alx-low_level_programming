@@ -8,11 +8,16 @@
 char *_strcat(char *dest, char *src)
 {
 	int counter;
+	_putchar(*dest);
 
 	while(*dest++)
 	{
 		counter++;
+		_putchar(*dest);
 	}
-	dest[counter] = *src;
+
+	_putchar(*dest);
+	_putchar('\n');
+	*dest = *src;
 	return dest;
 }
