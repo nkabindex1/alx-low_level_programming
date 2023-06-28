@@ -7,10 +7,9 @@
 void reverse_array(int *a, int n)
 {
 	int j;
-	int length = (int)(n / 2) + (n % 2); 
 
 	j = 0;
-	for (; j <= length; j++)
+	for (; j <= n--; j++)
 	{
 		int tmp = a[j];
 
