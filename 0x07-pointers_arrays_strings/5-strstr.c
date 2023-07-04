@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * _strpbrk - locates first occurance of a word
- * @s: array being searched
- * @accept: character being evaluated
+ * _strstr - locates first occurance of a word
+ * @haystack: array being searched
+ * @needle: array being evaluated
  * Return: number of bytes from accept
  */
 char *_strstr(char *haystack, char *needle)
 {
-	for (;*haystack != '\0'; haystack++)
+	for ( ; *haystack != '\0'; haystack++)
 	{
 		char *one = haystack;
 		char *two = needle;
