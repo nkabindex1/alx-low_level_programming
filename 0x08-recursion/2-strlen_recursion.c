@@ -2,6 +2,7 @@
 /**
  * _strlen_recursion - Entry point
  * @s: prints string
+ * Return: int length of *s
  */
 int _strlen_recursion(char *s)
 {
