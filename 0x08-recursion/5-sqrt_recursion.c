@@ -1,22 +1,12 @@
 #include "main.h"
 /**
- * _sqrt_recursion - Entry point
- * @n: int input
- * Return: sqrt success
- */
-int _sqrt(int n, int i);
-
-int _sqrt_recursion(int n)
-{
-	return (_sqrt(n, 1));
-}
-
-/**
  * _sqrt - Entry point
  * @n: int input
  * @i: int input
  * Return: sqrt success
  */
+int _sqrt(int n, int i);
+
 int _sqrt(int n, int i)
 {
 	int sqrt = i * i;
@@ -28,4 +18,12 @@ int _sqrt(int n, int i)
 	return (_sqrt(n, i + 1));
 }
 
-
+/**
+ * _sqrt_recursion - Entry point
+ * @n: int input
+ * Return: sqrt success
+ */
+int _sqrt_recursion(int n)
+{
+	return (_sqrt(n, 1));
+}
