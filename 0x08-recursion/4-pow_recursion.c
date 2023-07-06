@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _pow_recursion - Entry point
- * @n: int input
+ * @x: int input
  * @y: int input
  * Return: pow success
  */
