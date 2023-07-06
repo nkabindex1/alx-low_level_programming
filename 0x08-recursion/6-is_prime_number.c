@@ -24,6 +24,8 @@ int is_prime(int n, int divisor)
  */
 int is_prime_number(int n)
 {
+	if (n < 0)
+		n = n * -1;
 	return (is_prime(n, n - 1));
 }
 
