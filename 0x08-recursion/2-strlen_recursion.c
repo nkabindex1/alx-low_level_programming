@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_strlen_recursion - Entry point
+ * _strlen_recursion - Entry point
  * @s: prints string
  */
 int _strlen_recursion(char *s)
