@@ -8,23 +8,28 @@
 
 int **alloc_grid(int width, int height)
 {
-	char *tmp;
-	unsigned int i, r;
+	char **grid;
+	unsigned int x, y;
 
-	if (str == NULL)
+	if (width < 1 && height < 1)
 		return (NULL);
-	i = 0;
+	grid = malloc(sizeof(int *) * height);
 
-	for (; str[i] != '\0'; i++)
-		continue;
-	tmp = malloc(sizeof(char) * (i + 1));
-
-	if (tmp == NULL)
+	if (grid == NULL)
 		return (NULL);
 
-	for (r = 0; str[r]; r++)
+	for (x = 0; x < height; x++)
 	{
-		tmp[r] = str[r];
+		grid[x] = malloc(sizeof(int) * width); 
+		if (grid[x] == NULL)
+		{
+			for (; x > 1; x--)
+				free(grid[x]);
+			free(grid);
+			return (NULL);
+		}
+		for (y = 0; y < width; y++)
+			grid[x][y] = 0;
 	}
-	return (tmp);
+	return (grid);
 }
