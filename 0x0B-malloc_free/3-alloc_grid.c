@@ -5,7 +5,6 @@
  *@width: input
  *Return: 2-dim array
  */
-
 int **alloc_grid(int width, int height)
 {
 	char **grid;
@@ -14,13 +13,11 @@ int **alloc_grid(int width, int height)
 	if (width < 1 && height < 1)
 		return (NULL);
 	grid = malloc(sizeof(int *) * height);
-
 	if (grid == NULL)
 		return (NULL);
-
 	for (x = 0; x < height; x++)
 	{
-		grid[x] = malloc(sizeof(int) * width); 
+		grid[x] = malloc(sizeof(int) * width);
 		if (grid[x] == NULL)
 		{
 			for (; x > 1; x--)
