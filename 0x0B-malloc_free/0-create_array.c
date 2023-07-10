@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+ *create_array - allocate memory for array and assign character c
+ *@size: size of array
+ *@c: character for instintiating array
+ */
 
 char *create_array(unsigned int size, char c)
 {
