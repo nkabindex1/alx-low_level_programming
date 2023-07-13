@@ -4,7 +4,7 @@
  * @min: min range
  * @max: max range
  */
-char *array_range(int min, int max)
+int *array_range(int min, int max)
 {
 	int *ptr;
 	int i, size;
