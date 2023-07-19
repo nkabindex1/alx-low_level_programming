@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 /**
- * array_iterator - prints name
+ * int_index - prints name
  * @array: array
  * @size: no of elements to print
  * @cmp: pointer to one of the functions
