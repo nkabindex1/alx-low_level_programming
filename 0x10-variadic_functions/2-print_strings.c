@@ -1,11 +1,11 @@
 #include "variadic_functions.h"
 /**
- * print_string - prints numbers
+ * print_strings - prints numbers
  * @separator: string separator
  * @n: number of items
  * @...: variable items
  */
-void print_string(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list strings;
 	char *str;
