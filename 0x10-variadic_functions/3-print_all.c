@@ -1,8 +1,7 @@
 #include "variadic_functions.h"
 /**
  * print_all - prints anything
- * @format: string separator
- * @n: number of items
+ * @format: data types
  * @...: variable items
  */
 void print_all(const char * const format, ...)
@@ -19,16 +18,29 @@ void print_all(const char * const format, ...)
 		{
 			switch (format[i])
 			{
-			
+				case 'c':
+					printf("%s%c", sep, va_arg(list, int));
+					break;
+				case 'i':
+					printf("%s%d", sep, va_arg(list, int));
+					break;
+				case 'f':
+					printf("%s%f", sep, va_arg(list, double));
+					break;
+				case 's':
+					str = va_arg(list, char *);
+					if (!str)
+						str = "(nil)";
+					printf("%s%s", sep, str);
+					break;
+				default:
+					i++;
+					continue;
 			}
+			sep = ", ";
+			i++;
 		}
 	}
-
-	for (i = 0; i < n; i++)
-	{
-		printf("%d", va_arg(nums, int));
-		if (i != (n - 1) && separator != NULL)
-			printf("%s", separator);
-	}
-	va_end(nums);
+	printf("\n");
+	va_end(list);
 }
